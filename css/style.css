@@ -1,0 +1,1168 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* .text-main-color {
+  color: var(--main-color);
+} */
+/************** End Global CSS ********************/
+/************** Start Navbar **********************/
+.nav-item {
+  position: relative;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 18%;
+  width: 80%;
+  height: 2px;
+  background-color: black;
+}
+.navbar-nav li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 25px 20px 0;
+  padding: 5 10px;
+  background: none;
+  cursor: pointer;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+/************** End Navbar ************************/
+/************** Start Home ************************/
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../images/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.home h5 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 55px;
+}
+.home h1 {
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.home h1::after {
+  content: "";
+  animation-name: home-header;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes home-header {
+  0% {
+    content: " |";
+  }
+  2% {
+    content: "L|";
+  }
+  3% {
+    content: "La|";
+  }
+  4.5% {
+    content: "Lar|";
+  }
+  6% {
+    content: "Larr|";
+  }
+  7.5% {
+    content: "Larry|";
+  }
+  9% {
+    content: "Larry |";
+  }
+  10.5% {
+    content: "Larry D|";
+  }
+  12% {
+    content: "Larry Da|";
+  }
+  13.5% {
+    content: "Larry Dan|";
+  }
+  15% {
+    content: "Larry Dani|";
+  }
+  16.5% {
+    content: "Larry Danie|";
+  }
+  18% {
+    content: "Larry Daniels|";
+  }
+  19.5% {
+    content: "Larry Daniels|";
+  }
+  21% {
+    content: "Larry Daniels |";
+  }
+  22.5% {
+    content: "Larry Daniel|";
+  }
+  24% {
+    content: "Larry Danie|";
+  }
+  25.5% {
+    content: "Larry Danie|";
+  }
+  27% {
+    content: "Larry Dani|";
+  }
+  28.5% {
+    content: "Larry Dan|";
+  }
+  30% {
+    content: "Larry Da|";
+  }
+  31.5% {
+    content: "Larry D|";
+  }
+  33% {
+    content: "Larry |";
+  }
+  34.5% {
+    content: "Larry|";
+  }
+  36% {
+    content: "Larr|";
+  }
+  37.5% {
+    content: "Lar|";
+  }
+  39% {
+    content: "La|";
+  }
+  40.5% {
+    content: "L|";
+  }
+  42% {
+    content: "|";
+  }
+  43.5% {
+    content: "|";
+  }
+  45% {
+    content: "D|";
+  }
+  46.5% {
+    content: "De|";
+  }
+  48% {
+    content: "Dev|";
+  }
+  49.5% {
+    content: "Deve|";
+  }
+  51% {
+    content: "Devel|";
+  }
+  52.5% {
+    content: "Develo|";
+  }
+  54% {
+    content: "Develop|";
+  }
+  55.5% {
+    content: "Develope|";
+  }
+  57% {
+    content: "Developer|";
+  }
+  58.5% {
+    content: "Developer|";
+  }
+  60% {
+    content: "Develope|";
+  }
+  61.5% {
+    content: "Develop|";
+  }
+  63% {
+    content: "Develo|";
+  }
+  64.5% {
+    content: "Devel|";
+  }
+  66% {
+    content: "Deve|";
+  }
+  67.5% {
+    content: "Dev|";
+  }
+  69% {
+    content: "De|";
+  }
+  70.5% {
+    content: "D|";
+  }
+  72% {
+    content: "|";
+  }
+  73.5% {
+    content: "|";
+  }
+  75% {
+    content: "D|";
+  }
+  76.5% {
+    content: "De|";
+  }
+  78% {
+    content: "Des|";
+  }
+  79.5% {
+    content: "Desi|";
+  }
+  81% {
+    content: "Desig|";
+  }
+  82.5% {
+    content: "Design|";
+  }
+  84% {
+    content: "Designe|";
+  }
+  85.5% {
+    content: "Designer|";
+  }
+  87% {
+    content: "Designe|";
+  }
+  88.5% {
+    content: "Design|";
+  }
+  90% {
+    content: "Desig|";
+  }
+  91.5% {
+    content: "Desi|";
+  }
+  93% {
+    content: "Des|";
+  }
+  94.5% {
+    content: "De|";
+  }
+  96% {
+    content: "D|";
+  }
+  97.5% {
+    content: "|";
+  }
+  99% {
+    content: "|";
+  }
+  100% {
+    content: "D|";
+  }
+}
+
+@media screen and (max-width: 1399.98px) {
+  .home h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .home h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-collapse {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .nav-link {
+    color: black !important;
+    font-size: 14px;
+  }
+  .navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 0%;
+    height: 0px;
+    background-color: rgb(202, 10, 10);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .home h1 {
+    font-size: 40px;
+  }
+}
+.home ul li {
+  /* border: 2px solid red; */
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/************** End Home **************************/
+/************** Start About  **********************/
+.about .about-img {
+  position: relative;
+}
+.layer-img {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: -30px;
+  bottom: -30px;
+  z-index: -1;
+  background: white;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+.w-41 {
+  width: 40.66666667%;
+}
+.w-58 {
+  width: 58.33333333%;
+}
+.about-content h3 {
+  font-weight: 800;
+  font: size 30px;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+.about-content h5 {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.about-content p {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+  margin-bottom: 30px;
+}
+.progress {
+  height: 22px;
+}
+.progress-bar {
+  background-color: black;
+  border-radius: 5px;
+}
+.skills-item {
+  margin-bottom: 30px;
+}
+.target h6 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.btn-download,
+.btn-contact {
+  padding: 10px 30px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  transition: all 0.5s;
+}
+.btn-download {
+  background-color: black;
+  color: white;
+}
+
+.btn-contact {
+  background-color: white;
+  color: black;
+}
+
+.btn-contact:hover {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 991.9px) {
+  .about-media {
+    flex-direction: column;
+  }
+  .about-media-img {
+    width: 100%;
+  }
+  .about-media-content {
+    width: 100%;
+  }
+  .about-content {
+    margin-top: 70px;
+  }
+}
+/************** End About  ************************/
+/************** Start Services ********************/
+.service-head h3 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+.services .service-head {
+  position: relative;
+  z-index: 1;
+}
+
+/* .layer-head {
+  position: absolute;
+  width: 13%;
+  height: 30px;
+  left: 43%;
+  bottom: -10px;
+  z-index: -1;
+  background: #f8f9fa;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .layer-head {
+    position: absolute;
+    width: 16%;
+    height: 30px;
+    left: 42%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .layer-head {
+    position: absolute;
+    width: 9%;
+    height: 30px;
+    left: 30%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .layer-head {
+    position: absolute;
+    width: 9%;
+    height: 30px;
+    left: 30%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+} */
+.icon i {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.service-items .icon i {
+  background-color: #f4f4f4;
+  transition: all 0.5s;
+}
+.service-items:hover .icon i {
+  color: white;
+  background-color: black;
+  border-color: #cde1f8 !important;
+}
+.service-items h6 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+}
+.service-items p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(116, 129, 130);
+}
+@media screen and (max-width: 991.9px) {
+  .service-media {
+    padding: 0 20px;
+  }
+  .layer-head {
+    width: 44%;
+    height: 30px;
+    left: 27%;
+    bottom: -5px;
+  }
+}
+/************** End Services **********************/
+/************** Start Portfolio-Works *************/
+.portfolio-head h3 {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+.portfolio .portfolio-head {
+  position: relative;
+  z-index: 1;
+}
+
+/* .layer2-head {
+  position: absolute;
+  width: 13%;
+  height: 30px;
+  left: 43%;
+  bottom: -10px;
+  z-index: -1;
+  background: #f8f9fa04;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .layer2-head {
+    position: absolute;
+    width: 15%;
+    height: 30px;
+    left: 42%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa04;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .layer2-head {
+    width: 18%;
+    height: 30px;
+    left: 41%;
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .layer2-head {
+    position: absolute;
+    width: 25%;
+    height: 30px;
+    left: 37%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa04;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+} */
+
+.layer-card h6 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  color: rgb(52, 52, 52);
+}
+.icons i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.icons i:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.layer-card {
+  width: 98%;
+  height: 97%;
+  background: rgba(255, 255, 255, 0.95);
+  top: 5px;
+  left: 4px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  transition: all 0.9s;
+  opacity: 0;
+}
+.portfolio-card:hover .layer-card {
+  z-index: 1;
+  opacity: 1;
+}
+.nav-pills .nav-link.active:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+  bottom: -5%;
+  left: 25%;
+  transition: all 0.3s;
+}
+.nav-pills .nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  bottom: -5%;
+  left: 0;
+  transition: all 0.3s;
+}
+.nav-pills .nav-link.active:hover::before {
+  width: 80%;
+  left: 10%;
+}
+.nav-pills .nav-link:hover::before {
+  width: 80%;
+  left: 10%;
+}
+.nav-pills .nav-link.active:before {
+  visibility: visible;
+}
+.nav-pills .nav-link {
+  color: rgb(34, 34, 34);
+  background-color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+.nav-pills .nav-link.active {
+  color: rgb(34, 34, 34);
+  background-color: white;
+}
+/************** End Portfolio-Works ***************/
+/************** Start Testimonials-Clients ********/
+.client-head h3 {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+.client .client-head {
+  position: relative;
+  z-index: 1;
+}
+
+/* .layer3-head {
+  position: absolute;
+  width: 18%;
+  height: 30px;
+  left: 41%;
+  bottom: -3px;
+  z-index: -1;
+  background: #f8f9fa;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .layer3-head {
+    position: absolute;
+    width: 21%;
+    height: 30px;
+    left: 41%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .layer3-head {
+    width: 25%;
+    height: 30px;
+    left: 37%;
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .layer3-head {
+    position: absolute;
+    width: 31%;
+    height: 30px;
+    left: 34%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .layer3-head {
+    position: absolute;
+    width: 55%;
+    height: 30px;
+    left: 22%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+} */
+
+.w-90 {
+  width: 90px;
+}
+.client p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+  margin-top: 20px;
+}
+.client h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+  margin-bottom: 2px;
+}
+.client span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgb(136, 136, 136);
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #d6d6d6;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.carousel-indicators [data-bs-target]:hover {
+  background-color: gray;
+}
+/************** End Testimonials-Clients **********/
+/************** Start counter ************************/
+.counter-icon i {
+  font-size: 40px;
+  color: rgb(52, 52, 52);
+}
+.counter-items h3 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+.counter-items p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+/************** End counter **************************/
+/************** Start Team ************************/
+.team-head h3 {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+
+.team .team-head {
+  position: relative;
+  z-index: 1;
+}
+
+/* .layer4-head {
+  position: absolute;
+  width: 14%;
+  height: 30px;
+  left: 43%;
+  bottom: -3px;
+  z-index: -1;
+  background: #f8f9fa;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .layer4-head {
+    position: absolute;
+    width: 16%;
+    height: 30px;
+    left: 41%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .layer4-head {
+    width: 18%;
+    height: 30px;
+    left: 40%;
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .layer4-head {
+    position: absolute;
+    width: 24%;
+    height: 30px;
+    left: 38%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .layer4-head {
+    position: absolute;
+    width: 42%;
+    height: 30px;
+    left: 29%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+} */
+
+.card-body {
+  background-color: #5b5b5b;
+}
+.card-body h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+.card-body h5 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+}
+
+.card-img img {
+  transition: all 0.5s;
+}
+.card-img:hover img {
+  transform: scale(1.2);
+}
+.layer-card-team {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  top: 0%;
+  z-index: -1;
+  transition: all 0.9s;
+  opacity: 0;
+}
+.card:hover .layer-card-team {
+  z-index: 1;
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+.layer-card-team ul li {
+  margin-right: 10px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.layer-card-team ul li:hover {
+  background-color: white;
+  color: black;
+}
+.card {
+  border-radius: 0%;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .card {
+    width: 20rem !important;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .card {
+    width: 18rem !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .card {
+    width: 18rem !important;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .card {
+    width: 28rem !important;
+  }
+}
+/************** End Team **************************/
+
+/************** Start Contact *********************/
+.contact-head h3 {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+}
+
+.contact .contact-head {
+  position: relative;
+  z-index: 1;
+}
+
+/* .layer5-head {
+  position: absolute;
+  width: 16%;
+  height: 30px;
+  left: 42%;
+  bottom: -3px;
+  z-index: -1;
+  background: #f8f9fa00;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .layer5-head {
+    position: absolute;
+    width: 20%;
+    height: 30px;
+    left: 40%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa00;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .layer5-head {
+    width: 24%;
+    height: 30px;
+    left: 38%;
+    bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .layer5-head {
+    position: absolute;
+    width: 27%;
+    height: 30px;
+    left: 36%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa00;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .layer5-head {
+    position: absolute;
+    width: 49%;
+    height: 30px;
+    left: 24%;
+    bottom: -10px;
+    z-index: -1;
+    background: #f8f9fa00;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.184) 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+  }
+} */
+
+.communication i {
+  background-color: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.communication h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+.communication p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+
+.communication:hover i {
+  background-color: black;
+  color: white;
+}
+.first {
+  display: flex;
+}
+.btn-submit {
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+  outline: 0;
+  box-shadow: 0 0 0 #f8f9fa !important;
+}
+.form-control {
+  border: none;
+}
+@media screen and (max-width: 991.98px) {
+  .first {
+    display: flex;
+    flex-direction: column;
+  }
+  input.form-control {
+    margin-bottom: 10px;
+  }
+  textarea {
+    margin-top: -20px;
+  }
+}
+/************** End Contact ***********************/
+/************** Start Footer  *********************/
+footer {
+  background-color: #1c1c1c;
+}
+footer p {
+  font-family: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgb(116, 129, 130);
+}
+/************** End Footer  **********************/
+/************** Start Media Query *****************/
+@media screen and (max-width: 1399.98px) {
+}
+
+@media screen and (max-width: 1199.98px) {
+}
+
+@media screen and (max-width: 991.98px) {
+}
+@media screen and (max-width: 767.98px) {
+}
+/************** End Media Query *******************/
